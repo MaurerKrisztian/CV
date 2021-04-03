@@ -56,6 +56,10 @@ e. Others
   }
 }
 
+.stats {
+   margin: 50px 50px 20px 50px;
+}
+
 .bar{
   background-color: #EEE;
   padding: 2px;
