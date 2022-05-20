@@ -62,7 +62,7 @@
     <div class="row banner">
         <div class="banner-text">
             <h1 class="responsive-headline">I'm Krisztián Maurer.</h1>
-            <h3>I'm a web, IoT, mobile <span>developer</span>. Let's <a class="smoothscroll" href="#about">start
+            <h3>I'm a web, full stack, IoT,  (devops) <span>developer</span>. Let's <a class="smoothscroll" href="#about">start
                 scrolling</a>
                 and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
             <hr/>
@@ -100,7 +100,7 @@
             <h2>About Me</h2>
 
             <p>Programming it's a hobby for me I don't see just as a job.
-                I'm a fast learner and could learn autodidactically with good problem solving
+                I'm fast learner and could learn autodidactically with good problem solving
                 skills.
             </p>
 
@@ -195,9 +195,9 @@
                     <p class="info">Fullstack<span>&bull;</span> <em class="date">July 2020 - Present</em></p>
 
                     <p>
-                        My first programmer job. I learned a lot. Mostly I created APIs in Nodejs and express with
+                        My first programmer job. I learned a lot. Mostly I created APIs in Nodejs (express, ts, nestjs) with
                         mongodb database.
-                        Also worked in some angular projects.
+                        Also worked in some angular projects, 3D stuffs (WebGL, ThreeJs), CMS, chrome extension...
                     <h4> Projects: </h4>
                     <hr>
                             <h6><img class="work-icon" alt="" src="my_images/work/fingerprint.jpg">
@@ -227,7 +227,7 @@
                             <hr>
                             <h6><img class="work-icon" alt="" src="my_images/work/upload.png"> Central uploader</h6>
                             <p>Centralized file uploader. configurable destination (ftp, sftp, dropbox, api..) </p>
-                            <b>Nodejs, TypeScript, Angular, Redis, Job queue</b>
+                            <b>Nodejs, TypeScript, Angular, Redis, Job queue, Docker</b>
                             <hr>
                             <h6><img class="work-icon" alt="" src="my_images/work/injector-icon-16.jpg">
                                 IoC dependency injection container (<a
@@ -237,8 +237,24 @@
                             <p> My DI implementation learning project. (Click the github link for more information.)</p>
                             <b>TypeScript</b>
                             <hr>
+                    <h6><img class="work-icon" alt="" src="my_images/work/chrome.png">
+                        Bug report chrome extension
+                    </h6>
+                    <p> Chrome extension for creating issues. Basically create a screenshot, collect useful website data  for debuging and redirect to gitlab with the filled template.. </p>
+                    <b>TypeScript</b>
+                    <hr>
 
                             </p>
+                    <h6><img class="work-icon" alt="" src="my_images/work/cms.png">
+                        CMS
+                    </h6>
+                    <p>Jeweler, factory, customer cms.</p>
+                    <b>TypeScript, Nestjs, Angular, Docker</b>
+                    <hr>
+                    and more..
+                    <hr>
+
+                    </p>
 
                 </div>
 
@@ -386,11 +402,11 @@
                     <div class="item-wrap">
 
                         <a href="#modal-03" title="">
-                            <img alt="" src="my_images/weather_project.png" style="width: 220px; height: 200px">
+                            <img alt="" src="my_images/taskmanager.webp" style="width: 220px; height: 200px">
                             <div class="overlay">
                                 <div class="portfolio-item-meta">
-                                    <h5>Current weather</h5>
-                                    <p>Javascript</p>
+                                    <h5>Task manager</h5>
+                                    <p>Nestjs, Angular, Typescript, Docker, Microservices, Hosting, Domain, Nginx Proxy</p>
                                 </div>
                             </div>
                             <div class="link-icon"><i class="icon-plus"></i></div>
@@ -500,7 +516,7 @@
                 <p>This is an "watch online" website with animes. I used nodejs API (TypeScript), Angular UI, Mongodb
                     database and Firebase hosting. This app is in development.</p>
                 <p>Demo: <a href="https://animestream-2c543.web.app/home" target="_blank">
-                    https://animestream-2c543.web.app/home</p></a>
+                    https://animestream-2c543.web.app/home</a> (need some time to load the heroku api server) </p>
                 <p>Api doc: <a href="https://app.swaggerhub.com/apis-docs/MaurerKrisztian/AnimeStream/1.0.0"
                                target="_blank">
                     https://app.swaggerhub.com/apis-docs/MaurerKrisztian/AnimeStream/1.0.0</a></p>
@@ -523,7 +539,7 @@
 
             <div class="description-box">
                 <h4>Chat app</h4>
-                <p>I created a chat application with socket.io, Nodejs </p>
+                <p>I created a chat application with socket.io, Nodejs (need some time to load the heroku server)</p>
                 <span class="categories"><i class="fa fa-tag"></i>Web</span>
             </div>
 
@@ -554,17 +570,56 @@
 
         <div id="modal-03" class="popup-modal mfp-hide">
 
-            <img class="scale-with-grid" src="my_images/weather_project.png" alt=""/>
+            <img class="scale-with-grid" src="my_images/taskmanager.webp" alt=""/>
 
             <div class="description-box">
-                <h4>Weader App</h4>
-                <p>This is a simple weader application.</p>
-                <span class="categories"><i class="fa fa-tag"></i>javascript, Api</span>
+                <h4>Task manager but more..</h4>
+                <p>This is a personal task and productivity tracker and manager.</p>
+                <p>
+                    Features:
+                <OL>
+                <li>  - Tak management (boards) + statistics</li>
+                <UL>
+                <li>    - drag and drop, label editor, (title, description, startat, workedtime, etc..)</li>
+                <li>    - daily email with the day tasks</li>
+                    </UL>
+                    <li>- Fittnes:</li>
+                <UL>
+                <li>    - weight tracker with chart</li>
+                <li>    - macro tracker</li>
+                    </UL>
+                    <li>- Habit: "Don't break the chain" habit tracker</li>
+                <li>- Meeting: create meeting (also send emails with the room links)</li>
+                <li>- Blog: wp blog</li>
+                </OL>
+                </p>
+
+                Demo: <a target="_blank" href="https://mytaskplan.me/">https://mytaskplan.me/</a>
+                <h4> Some subdomain links:</h4>
+                <a target="_blank" href="https://mytaskplan.me/api">api</a> |
+                <a target="_blank" href="https://mytaskplan.me">ui</a> |
+                <a target="_blank" href="https://template.mytaskplan.me">template microservice</a> |
+                <a href="https://blog.mytaskplan.me/">blog</a>
+                <h4> Some devops links:</h4>
+                <p><a target="_blank" href="https://portainer.mytaskplan.me/">portainer (docker manager)</a> </p>
+                <p><a target="_blank" href="http://nginx.mytaskplan.me/">nginx proxy manager </a> </p>
+                <p>private npm regitry (Verdaccio)</p>
+                <p><a target="_blank" href="https://netdata.mytaskplan.me/">netdatat</a> </p>
+
+                <h4>CI/CD</h4>
+                <p>All repository main brach is automatically deploys to my linode server every push event. </p>
+                <h4>Github links</h4>
+                <a target="_blank" href="https://github.com/MaurerKrisztian/TaskManager">UI</a> |
+                <a target="_blank" href="https://github.com/MaurerKrisztian/TaskManager-api">API</a> |
+                <a target="_blank" href="https://github.com/MaurerKrisztian/tempalte-api-tm">Tempalte microservice</a> |
+                <a target="_blank" href="https://github.com/MaurerKrisztian">more..</a>
+
+                <span class="categories"><i class="fa fa-tag"></i>Nestjs, MongoDb, Angular, Typescript, Docker, Microservices, Hosting, Domain, Nginx Proxy, Linode</span>
             </div>
 
             <div class="link-box">
                 <a href="https://mk-weather-api.herokuapp.com/index.html" target="_blank">Demo</a>
-                <a class="popup-modal-dismiss">Close</a>
+                <a target="_blank" class="popup-modal-dismiss">Close</a>
             </div>
 
         </div><!-- modal-03 End -->
